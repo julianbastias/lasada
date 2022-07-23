@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranja: #FF8C32;   
+    --azul: #06113C;   
+    --gris: #DDDDDD;  
+    --blanco: #EEEEEE;
+    --bold: 900;  
+    --medium: 700;
+    --regular: 400;
+    --thin: 300;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    background-color: var(--naranja);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--naranja);
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.menu i {
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.containeritems {
+    width: 100%;
+    order: 1;
+    display: flex;
+    align-items:center;
+}
+
+.items {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: none;
+}
+.items a {
+    color: var(--azul);
+}
+
+items a:visited {
+    color: var(--azul);
+}
+
+
+/* SECTION */
+
+.aboutcontent {
+    padding: 3rem;
+    background-color: var(--azul);
+    color: var(--gris);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutcontent p {
+    font-weight: var(--thin);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.aboutcontent h2 {
+    font-size: 2,5rem;
+}
+
+.aboutsection {
+    background-color: #06113C;
+}
+
+.main {
+    background-color: var(--azul);
+}
+
+
+/* CARTAS */
+
+.cartas {
+    background-color: var(--azul);
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.cartas h2 {
+    font-size: 2rem;
+}
+
+
+.containercarta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 30px 0px;
+    gap: 20px;
+}
+
+.containeritems i {
+    display: none;
+}
+
+.carta {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.carta h3 {
+    font-size: 25px;
+}
+.carta img {
+    border-radius: 30px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.btnhero {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.btnheronostock {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+
+}
+
+
+/* FOOTER */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    background-color: var(--naranja);
+    width: 100%;
+    color: var(--azul);
+}
+
+.contacto {
+    text-align: center;
+}
+
+.redes {
+    text-align: center;
+}
+
+/* Media Queris */
+
+@media (min-width:769px) {
+     /* menu */
+     .menu {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .containeritems {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        font-weight: var(--bold);
+    }
+    .items {
+        display: flex;
+    }
+    .btncontainer {
+        display: none;
+    }
+
+    /* SECTION ABOUT */
+
+    .main {
+        background-color: var(--azul);
+    }
+
+    
+}
+
+
+
+@media (min-width:1024px) {
+    /* menu */
+    .menu {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .containeritems {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        font-weight: var(--bold);
+    }
+    .items {
+        display: flex;
+    }
+    .btncontainer {
+        display: none;
+    }
+
+    /* SECTION ABOUT */
+
+    .imgabout {
+        width: 40%;
+        padding: 2rem;
+        border-radius: 50px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem ;
+    }
+
+    .aboutsection {
+            width: 40%;
+            border-radius: 50px;
+    }
+
+    .aboutcontent {
+        border-radius: 50px;
+    }
+
+    .main {
+        background-color: var(--naranja);
+    }
+    
+
+    /* CARTAS */
+
+    .containercarta {
+        flex-direction: row;
+    }
+
+    .carta img {
+        width: 60%;
+    }
+
+    /* FOOter */
+
+    .footer {
+        gap: 35%;
+    }
+}

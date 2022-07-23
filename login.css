@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranja: #FF8C32;   
+    --azul: #06113C;   
+    --gris: #DDDDDD;  
+    --blanco: #EEEEEE;
+    --bold: 900;  
+    --medium: 700;
+    --regular: 400;
+    --thin: 300;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    background-color: var(--naranja);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--naranja);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu i {
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.containeritems {
+    width: 100%;
+    order: 1;
+    font-weight: var(--bold);
+}
+
+.items {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: none;
+}
+
+.items a {
+    color: var(--azul);
+}
+
+items a:visited {
+    color: var(--azul);
+}
+
+
+/* LOGIN */
+
+.containerlogin {
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    height:auto;
+}
+
+.imglogin {
+    width: 25%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--azul);
+    padding: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btnlogin {
+    background-color: var(--azul);
+    color: var(--gris);
+    cursor: pointer;
+    width: 100px;
+    padding: 0 0 1px 0;
+    font-weight: var(--medium);
+} 
+
+.login a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+
+/* MEDIA */
+
+@media (min-width:1024px) {
+    /* menu */
+    .menu {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .containeritems {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        font-weight: var(--bold);
+    }
+    .items {
+        display: flex;
+    }
+    .btncontainer {
+        display: none;
+    }
+}
